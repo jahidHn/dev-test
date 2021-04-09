@@ -829,6 +829,9 @@
 	&__indicator {
 		font-size: rem-calc(14);
 		letter-spacing: 0.17px;
+		@include media('>desktop-medium') {
+			display: none;
+		}
 	}
 
 	&__label {
