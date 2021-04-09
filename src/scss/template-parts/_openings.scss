@@ -2,7 +2,6 @@
 	overflow: hidden;
 	position: relative;
 	padding-bottom: rem-calc(74);
-	background-color: #252525;
 
 	@include media('>phone') {
 		padding-bottom: 0;
@@ -13,7 +12,6 @@
 
 		max-width: rem-calc(575);
 		padding: rem-calc(55) rem-calc(14) rem-calc(68);
-		background-color: #fbfbfb;
 
 		@include media('>phone') {
 			position: relative;
@@ -22,7 +20,7 @@
 			align-items: center;
 			justify-content: space-between;
 			max-width: rem-calc(1920);
-			margin: rem-calc(60) rem-calc(30) rem-calc(60) rem-calc(120);
+			padding: rem-calc(60) rem-calc(30) rem-calc(60) rem-calc(120);
 		}
 
 		@include media('>tablet') {
@@ -42,7 +40,7 @@
 		}
 
 		@include media('>desktop-xlarge') {
-			padding: rem-calc(123) rem-calc(224) rem-calc(135) rem-calc(500);
+			padding: rem-calc(123) rem-calc(224) rem-calc(135) rem-calc(335);
 		}
 	}
 
