@@ -1,16 +1,16 @@
 <section id="openings" class="openings">
-	<div class="openings__wrapper">
-		<div class="openings__decoration openings-decoration" aria-hidden="true">
-			<div class="openings-decoration__label">
-				<span class="openings-decoration__label-inner">Open</span>
-			</div>
-			<div class="openings-decoration__label">
-				<span class="openings-decoration__label-inner">Roles</span>
-			</div>
-			<span class="openings-decoration__number">
-					001
-			</span>
+	<div class="openings__decoration openings-decoration" aria-hidden="true">
+		<div class="openings-decoration__label">
+		<span class="openings-decoration__label-inner">Open</span>
 		</div>
+		<div class="openings-decoration__label">
+		<span class="openings-decoration__label-inner">Roles</span>
+		</div>
+		<span class="openings-decoration__number">
+			001
+		</span>
+	</div>
+	<div class="openings__wrapper">
 		<div class="openings__content openings-content ">
 			<header class="openings__header openings-header">
 				<span class="openings-header__subtitle">Current Openings</span>
