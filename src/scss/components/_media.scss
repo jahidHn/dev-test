@@ -1,5 +1,5 @@
 %site-picture {
-	position: relative;
+	position: absolute;
 	display: block;
 }
 
@@ -37,6 +37,11 @@
 		@extend %image__color-burn;
 
 		left: 0;
+
+		@include media('>phone-small') {
+			right: 0;
+			left: auto;
+		}
 	}
 
 	&--right {

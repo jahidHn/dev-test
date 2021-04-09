@@ -126,7 +126,7 @@
 
 	&__media {
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		margin-bottom: rem-calc(47);
 
 		@include media('>phone-small') {
@@ -137,9 +137,9 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: 32.5%;
+			top: rem-calc(30);
 			left: 6.5%;
-			z-index: 1;
+			z-index: 2;
 			width: 83%;
 			height: 41.5%;
 			background-color: $color-orange;
@@ -153,6 +153,8 @@
 			}
 		}
 
+		
+		
 		&-main {
 			position: relative;
 			z-index: 3;
@@ -163,30 +165,49 @@
 
 			&::before,
 			&::after {
+				
 				@extend %dots-pattern;
 
 				z-index: 1;
 			}
 
 			&::before {
-				top: 6%;
-				left: -13%;
-				width: 26%;
-				height: 27%;
-
-				@include media('>phone-small') {
-					top: 21.5%;
-					left: -11%;
-					width: 26%;
-					height: 35.5%;
-				}
+				bottom: 0;
+				right: 0;
+				width: 90%;
+				height: 70%;
+				transform: translate( rem-calc(40), rem-calc(40));	
 			}
 		}
 	}
 
+
 	&__picture {
+
 		@extend %site-picture;
 
+		&-top {
+			width: 100%;
+			max-width: 130px;
+			top: 0;
+			right: 0;
+			z-index: 5;
+			transform: translate(-25px, 25px);
+
+			@include media('>phone-small') {
+				transform: translate(rem-calc(25), rem-calc(25));
+			}
+
+		}
+		&-bottom {
+			width: 100%;
+			max-width: 130px;
+			bottom: 0;
+			left: 0;
+			z-index: 5;
+			transform: translate(25px, -25px);
+			
+		}
 		&-main {
 			@include ratio(347, 528);
 
