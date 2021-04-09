@@ -127,7 +127,7 @@
 	&__media {
 		position: relative;
 		z-index: 3;
-		margin-bottom: rem-calc(47);
+		margin-bottom: rem-calc(80);
 
 		@include media('>phone-small') {
 			width: 49.6%;
@@ -172,11 +172,16 @@
 			}
 
 			&::before {
-				bottom: 0;
-				right: 0;
+
 				width: 90%;
-				height: 70%;
-				transform: translate( rem-calc(40), rem-calc(40));	
+				height: rem-calc(200);
+				bottom: rem-calc(-40);
+				right: rem-calc(-40);
+				@include media('>phone-small') {
+					left: rem-calc(-40);
+					right: auto;
+						
+				}
 			}
 		}
 	}
