@@ -292,7 +292,7 @@
 	&-content {
 		width: 93%;
 		margin-top: -16.5%;
-
+		position: relative;
 		@include media('>phone') {
 			width: 51.6%;
 			margin-top: 0;
@@ -331,8 +331,7 @@
 
 		&__inner {
 			background-color: $color-slate;
-			padding-top: rem-calc(118);
-
+			padding: rem-calc(118) rem-calc(50) rem-calc(118) rem-calc(59);
 			@include media('>499px') {
 				padding-top: rem-calc(160);
 			}
