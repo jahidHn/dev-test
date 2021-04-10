@@ -106,6 +106,7 @@
 			@include media('>desktop-small') {
 				margin-bottom: rem-calc(80);
 			}
+			
 		}
 
 		&__image {
@@ -113,7 +114,22 @@
 		}
 
 		.about-header {
+			padding-top: rem-calc(400);
 			margin-bottom: rem-calc(28);
+
+			@include media('>phone') {
+				padding-top: rem-calc(380);
+			}
+			
+			
+
+			@include media('>tablet') {
+				padding-top: rem-calc(370);
+			}
+
+			@include media('>desktop-large') {
+				padding-top: rem-calc(390);
+			}
 
 			&__subtitle {
 				@extend %header__subtitle--dark;
@@ -223,6 +239,12 @@
 
 			&:last-child {
 				margin-bottom: 0;
+			}
+
+			&:nth-child(2n) {
+				@include media('>phone') {
+					transform: translateY(50%);
+				}
 			}
 		}
 	}
