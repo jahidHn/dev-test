@@ -829,7 +829,7 @@
 	&__indicator {
 		font-size: rem-calc(14);
 		letter-spacing: 0.17px;
-		@include media('>desktop-medium') {
+		@include media('>desktop-small') {
 			display: none;
 		}
 	}

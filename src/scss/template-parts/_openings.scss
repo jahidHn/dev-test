@@ -2,15 +2,39 @@
 	overflow: hidden;
 	position: relative;
 	padding-bottom: rem-calc(74);
+	background-color: #252526;
+	&::before {
+		content: '';
+			background-color: #252526;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			z-index: 1;
+		@include media('>phone') {
+			width: rem-calc(90);
+		}
+		@include media('>desktop-medium') {
+			width: rem-calc(120);
+		}
 
+		@include media('>desktop-large') {
+			width: rem-calc(180);
+		}
+
+		@include media('>desktop-xlarge') {
+			width: rem-calc(200);
+		}
+	}
 	@include media('>phone') {
 		padding-bottom: 0;
 	}
 
 	&__wrapper {
-		@extend %site-wrapper;
-
-		max-width: rem-calc(575);
+		@extend %site-wrapper; 
+		max-width: rem-calc(575); 
+		background-color: #fbfbfb;
 		padding: rem-calc(55) rem-calc(14) rem-calc(68);
 
 		@include media('>phone') {
@@ -54,15 +78,18 @@
 		}
 
 		&__label {
-			@extend %text-decoration__label--light;
+			@extend %text-decoration__label--dark;
 
 			&-inner {
-				@extend %text-decoration__label-inner--light;
+				@extend %text-decoration__label-inner--dark;
 			}
 		}
 
 		&__number {
 			@extend %text-decoration__number--light;
+			@include media('>phone') {
+				color: #666;
+			}
 		}
 	}
 

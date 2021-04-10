@@ -174,7 +174,7 @@
 			&::before {
 
 				width: 90%;
-				height: rem-calc(200);
+				height: 80%;
 				bottom: rem-calc(-40);
 				right: rem-calc(-40);
 				@include media('>phone-small') {
