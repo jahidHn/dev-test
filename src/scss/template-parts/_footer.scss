@@ -240,6 +240,8 @@
 
 	margin-bottom: rem-calc(66);
 
+
+
 	@include media('>phone') {
 		margin-bottom: rem-calc(20);
 	}
@@ -299,6 +301,10 @@
 
 
 	&__list {
+
+		@include media('>phone') {
+			display: flex;
+		}
 		&-item {
 			@extend %arrow-block-button;
 

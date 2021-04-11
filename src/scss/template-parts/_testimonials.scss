@@ -236,7 +236,7 @@
       text-align: center;
       background-color: #fff;
       top: rem-calc(20);
-      padding: 0 rem-calc(50);
+      
       &::before {
         content: "";
         position: absolute;
@@ -252,7 +252,14 @@
         background-repeat: no-repeat;
       }
     }
-
+    .swiper-pagination-fraction {
+      position: absolute;
+      bottom: 0;
+      width: rem-calc(50);
+      left: 50%;
+      margin-left: -(rem-calc(25));
+      transform: translateY(-50%);
+    }
     &__picture {
       @extend %site-picture;
 
@@ -352,10 +359,10 @@
     max-width: rem-calc(350);
     margin-left: auto;
     margin-right: auto;
-    margin-top: rem-calc(100);
+    margin-top: rem-calc(150);
 
     @include media(">tablet") {
-      // display: none;
+       display: none;
     }
 
     &__buttons {
@@ -374,8 +381,6 @@
       }
     }
 
-    &__pagination-count {
-      
-    }
+    
   }
 }

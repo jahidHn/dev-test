@@ -12,7 +12,7 @@
 		autoHeight: false,
 		loop: true,
 		pagination: {
-			el: '.testimonials-carousel-nav__pagination-count',
+			el: '.testimonials-swiper-nav__pagination-count',
 			type: 'fraction',
 		  },
 		  navigation: {

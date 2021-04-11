@@ -80,12 +80,12 @@
                 
             </div>
             
-            <div class="testimonials__carousel-nav testimonials-carousel-nav">
+            <div class="testimonials__swiper-nav testimonials-carousel-nav">
                 <div id="testimonials-carousel-nav-buttons" class="testimonials-carousel-nav__buttons">
                     <button class="testimonials-carousel-nav__buttons--previous">Back</button>
                     <button class="testimonials-carousel-nav__buttons--next">Next</button>
                 </div>
-                <div class="testimonials-carousel-nav__pagination-count">
+                <div class="testimonials-swiper-nav__pagination-count">
                     
                 </div>
             </div>

@@ -332,7 +332,21 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function srcJsIndexJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/navigation */ \"./src/js/lib/navigation.js\");\n/* harmony import */ var _lib_navigation__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lib_navigation__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _lib_testimonials_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/testimonials-carousel */ \"./src/js/lib/testimonials-carousel.js\");\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib_navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/navigation */ \"./src/js/lib/navigation.js\");\n/* harmony import */ var _lib_navigation__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lib_navigation__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _lib_testimonials_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/testimonials-carousel */ \"./src/js/lib/testimonials-carousel.js\");\n/* harmony import */ var _lib_back_to_top__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/back-to-top */ \"./src/js/lib/back-to-top.js\");\n/* harmony import */ var _lib_back_to_top__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_back_to_top__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+    /***/
+  },
+
+  /***/
+  "./src/js/lib/back-to-top.js":
+  /*!***********************************!*\
+    !*** ./src/js/lib/back-to-top.js ***!
+    \***********************************/
+
+  /*! no static exports found */
+
+  /***/
+  function srcJsLibBackToTopJs(module, exports) {
+    eval("let scrollToTopBtn = document.getElementById(\"footer-scroll-top\");\nlet mainEl = document.documentElement;\nfunction scrollToTop() {\n  mainEl.scrollTo({\n    top: 0,\n    behavior: \"smooth\"\n  })\n}\nscrollToTopBtn.addEventListener(\"click\", scrollToTop)\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/lib/back-to-top.js?");
     /***/
   },
 
@@ -362,7 +376,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function srcJsLibTestimonialsCarouselJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
-    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_babel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper-babel */ \"./node_modules/swiper-babel/dist/js/swiper.esm.bundle.js\");\n \n\n\tconst testimonialsCarousel = document.querySelector('.swiper-container');\n\t// TODO: Implement Carousel\n\tconst swiper = new swiper_babel__WEBPACK_IMPORTED_MODULE_0__[\"default\"](testimonialsCarousel, {\n\t\t// Default parameters\n\t\t\n\t\tslidesPerView: 1,\n\t\tspaceBetween: 20,\n\t\tcenteredSlides: true,\n\t\tautoplay: true,\n\t\tautoHeight: false,\n\t\tloop: true,\n\t\tpagination: {\n\t\t\tel: '.testimonials-carousel-nav__pagination-count',\n\t\t\ttype: 'fraction',\n\t\t  },\n\t\t  navigation: {\n\t\t\tnextEl: '.testimonials-carousel-nav__buttons--next',\n\t\t\tprevEl: '.testimonials-carousel-nav__buttons--previous',\n\t\t  },\n\t\t  breakpoints: {\n\t\t\t\n\t\t\t100: {\n\t\t\t\tslidesPerView: 1,\n\t\t\t  spaceBetween: 10,\n\t\t\t  \n\t\t\t  },\n\t\t\t  300: {\n\t\t\t\tslidesPerView: 1,\n\t\t\t\tspaceBetween: 10,\n\t\t\t\t\n\t\t\t  },\n\t\t\t550: {\n\t\t\t  slidesPerView: 2,\n\t\t\t  spaceBetween: 20,\n\t\t\t\n\t\t\t},\n\t\t\t1024: {\n\t\t\t\tslidesPerView: 2,\n\t\t\t\tspaceBetween: 30,\n\t\t\t  },\n\t\t\t  3000: {\n\t\t\t\tslidesPerView: 3,\n\t\t\t\tspaceBetween: 30,\n\t\t\t  }\n\t\t  }\n\t\t\n\t  });\n\n\t  swiper.init();\n\n\n\n//# sourceURL=webpack:///./src/js/lib/testimonials-carousel.js?");
+    eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_babel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper-babel */ \"./node_modules/swiper-babel/dist/js/swiper.esm.bundle.js\");\n \n\n\tconst testimonialsCarousel = document.querySelector('.swiper-container');\n\t// TODO: Implement Carousel\n\tconst swiper = new swiper_babel__WEBPACK_IMPORTED_MODULE_0__[\"default\"](testimonialsCarousel, {\n\t\t// Default parameters\n\t\t\n\t\tslidesPerView: 1,\n\t\tspaceBetween: 20,\n\t\tcenteredSlides: true,\n\t\tautoplay: true,\n\t\tautoHeight: false,\n\t\tloop: true,\n\t\tpagination: {\n\t\t\tel: '.testimonials-swiper-nav__pagination-count',\n\t\t\ttype: 'fraction',\n\t\t  },\n\t\t  navigation: {\n\t\t\tnextEl: '.testimonials-carousel-nav__buttons--next',\n\t\t\tprevEl: '.testimonials-carousel-nav__buttons--previous',\n\t\t  },\n\t\t  breakpoints: {\n\t\t\t\n\t\t\t100: {\n\t\t\t\tslidesPerView: 1,\n\t\t\t  spaceBetween: 10,\n\t\t\t  \n\t\t\t  },\n\t\t\t  300: {\n\t\t\t\tslidesPerView: 1,\n\t\t\t\tspaceBetween: 10,\n\t\t\t\t\n\t\t\t  },\n\t\t\t550: {\n\t\t\t  slidesPerView: 2,\n\t\t\t  spaceBetween: 20,\n\t\t\t\n\t\t\t},\n\t\t\t1024: {\n\t\t\t\tslidesPerView: 2,\n\t\t\t\tspaceBetween: 30,\n\t\t\t  },\n\t\t\t  3000: {\n\t\t\t\tslidesPerView: 3,\n\t\t\t\tspaceBetween: 30,\n\t\t\t  }\n\t\t  }\n\t\t\n\t  });\n\n\t  swiper.init();\n\n\n\n//# sourceURL=webpack:///./src/js/lib/testimonials-carousel.js?");
     /***/
   }
   /******/
