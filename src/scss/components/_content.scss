@@ -63,22 +63,4 @@
 	font-size: rem-calc(12);
 	color: $color-white;
 	letter-spacing: 0.15px;
-
-	@include media('>phone') {
-		font-size: rem-calc(10);
-	}
-
-	@include media('>tablet') {
-		font-size: rem-calc(12);
-	}
-
-	&--total {
-		color: $color-lightgray;
-
-		&::before {
-			content: '/';
-			margin-left: 5px;
-			margin-right: 5px;
-		}
-	}
 }

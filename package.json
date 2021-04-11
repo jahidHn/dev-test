@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "include-media": "^1.4.9"
+    "include-media": "^1.4.9",
+    "swiper-babel": "^4.5.1"
   }
 }
