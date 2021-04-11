@@ -375,11 +375,7 @@
     }
 
     &__pagination-count {
-      @extend %pagination-count;
-
-      &--total {
-        @extend %pagination-count--total;
-      }
+      
     }
   }
 }
